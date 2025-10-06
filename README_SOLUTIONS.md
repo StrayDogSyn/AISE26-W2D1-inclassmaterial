@@ -1,6 +1,9 @@
 # W2D1 Breakout Assignments - Solution Guide
 
-This directory contains complete solutions for both breakout assignments from Week 2, Day 1.
+This directory contains comp### API Setup
+
+1. Get your OpenWeather API key:
+   - Create a free account at <https://home.openweathermap.org> solutions for both breakout assignments from Week 2, Day 1.
 
 ## Files Included
 
@@ -57,7 +60,7 @@ Creates `aircraft.csv` with columns:
 
 ## Breakout 2: OpenWeather API CLI App
 
-### Features
+### Key Features
 
 #### Basic Mode (Required)
 - Prompts user for city name
@@ -74,10 +77,10 @@ Creates `aircraft.csv` with columns:
 - `help` - Display comprehensive help menu
 - `quit` - Exit the program
 
-### Setup
+### API Setup
 
 1. Get your OpenWeather API key:
-   - Create a free account at https://home.openweathermap.org
+   - Create a free account at <https://home.openweathermap.org>
    - Navigate to API keys section
    - Copy your API key
 
@@ -90,7 +93,7 @@ Creates `aircraft.csv` with columns:
    notepad api_key.txt
    ```
 
-### Usage
+### Running the App
 
 ```powershell
 python breakout2_solution.py
@@ -103,12 +106,14 @@ When prompted, choose:
 ### Examples
 
 **Simple Mode:**
-```
+
+```text
 Please input a city (or q to quit): New York
 ```
 
 **Extended Mode:**
-```
+
+```text
 >>> location Paris
 >>> get temperature
 >>> get windspeed
@@ -116,7 +121,8 @@ Please input a city (or q to quit): New York
 >>> quit
 ```
 
-### Best Practices Implemented
+### Implementation Best Practices
+
 1. **Class-based design** - WeatherApp class encapsulates all functionality
 2. **API key management** - Stored in separate file (not hardcoded)
 3. **Error handling** - Comprehensive exception handling for all scenarios
@@ -140,7 +146,7 @@ Please input a city (or q to quit): New York
 
 ## Reflection Questions
 
-### Breakout 1
+### Breakout 1 Reflections
 1. **Issues encountered**: The script handles JSON parsing errors and missing fields gracefully
 2. **File modes**:
    - `r` (read): Opens file for reading only
@@ -148,7 +154,7 @@ Please input a city (or q to quit): New York
    - `a` (append): Adds to end of existing file
    - `x` (exclusive): Creates new file, fails if exists
 
-### Breakout 2
+### Breakout 2 Reflections
 1. **Error prediction**: 
    - Typos in city names
    - Empty input

@@ -1,4 +1,4 @@
 # Replace this with your actual OpenWeather API key
 # Get your free API key at: https://home.openweathermap.org/api_keys
 
-OPEN_API_KEY = '60786129768d89e2ec8a510f3dd64ae0' 
+api_key = '60786129768d89e2ec8a510f3dd64ae0' 

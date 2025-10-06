@@ -3,6 +3,7 @@
 ## Files Overview
 
 ### Solution Files
+
 | File | Size | Purpose |
 |------|------|---------|
 | `breakout1_solution.py` | 6.9 KB | JSON to CSV converter |
@@ -10,6 +11,7 @@
 | `aircraft.csv` | 255 B | Generated output from breakout1 |
 
 ### Documentation
+
 | File | Purpose |
 |------|---------|
 | `README_SOLUTIONS.md` | Complete setup and usage guide |
@@ -17,6 +19,7 @@
 | `QUICK_REFERENCE.md` | This file - quick commands |
 
 ### Configuration
+
 | File | Purpose |
 |------|---------|
 | `requirements.txt` | Python dependencies |
@@ -59,7 +62,8 @@ python breakout2_solution.py
 - **`quit`** - Exit program
 
 ### Available Details for `get` Command
-```
+
+```text
 time          temperature    feelslike
 pressure      sealevel       windspeed
 winddirection windgust       humidity
@@ -149,7 +153,8 @@ ls aircraft.zip
 ```
 
 **Problem**: Invalid JSON errors
-```
+
+```text
 # This is expected! The solution handles this gracefully
 # One file (Airbus_A380-800.json) has invalid JSON
 # The script skips it and processes the rest
@@ -165,7 +170,8 @@ notepad api_key.txt  # Paste your API key
 ```
 
 **Problem**: `Invalid API key`
-```
+
+```text
 # Solution: Get a free API key from OpenWeather
 # 1. Visit https://home.openweathermap.org/users/sign_up
 # 2. Create account
@@ -174,7 +180,8 @@ notepad api_key.txt  # Paste your API key
 ```
 
 **Problem**: `City not found`
-```
+
+```text
 # Solution: Check spelling, try:
 # - London
 # - New York
@@ -183,6 +190,7 @@ notepad api_key.txt  # Paste your API key
 ```
 
 **Problem**: `Import "requests" could not be resolved`
+
 ```powershell
 # Solution: Install dependencies
 pip install -r requirements.txt
