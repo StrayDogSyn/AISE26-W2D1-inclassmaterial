@@ -1,0 +1,11 @@
+# Requirements for W2D1 Breakout Assignments
+# JTC Program: AISE 25
+
+# For Breakout 2: OpenWeather API interaction
+requests==2.31.0
+
+# Optional: For better formatted output
+colorama==0.4.6
+
+# Optional: For environment variable management
+python-dotenv==1.0.0

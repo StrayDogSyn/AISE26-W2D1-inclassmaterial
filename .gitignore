@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# API Keys and Secrets
+api_key.txt
+.env
+*.key
+
+# Extracted data
+aircraft_data/
+
+# Logs
+log.txt
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+aircraft.csv
