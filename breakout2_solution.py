@@ -11,7 +11,9 @@ Date: Oct 6, 2025
 
 import requests
 import json
+import os
 from datetime import datetime
+from pathlib import Path
 from typing import Optional, Dict, List
 import sys
 
@@ -418,7 +420,7 @@ NOTES:
 
 def load_api_key(filename: str = "api_key.txt") -> Optional[str]:
     """
-    Load API key from a text file.
+    Load API key from a text file in the script's directory.
     
     Args:
         filename: Name of the file containing the API key
@@ -426,8 +428,12 @@ def load_api_key(filename: str = "api_key.txt") -> Optional[str]:
     Returns:
         API key as string, or None if file not found
     """
+    # Get the directory where this script is located
+    script_dir = Path(__file__).parent
+    api_key_path = script_dir / filename
+    
     try:
-        with open(filename, 'r', encoding='utf-8') as f:
+        with open(api_key_path, 'r', encoding='utf-8') as f:
             api_key = f.read().strip()
             
         if not api_key:
@@ -439,10 +445,11 @@ def load_api_key(filename: str = "api_key.txt") -> Optional[str]:
     except FileNotFoundError:
         print(f"Error: {filename} not found.")
         print(f"Please create a file named '{filename}' with your OpenWeather API key.")
+        print(f"Expected location: {api_key_path}")
         print("\nTo get an API key:")
         print("1. Create a free account at https://home.openweathermap.org")
         print("2. Find your key on openweathermap.org")
-        print(f"3. Save it to a file named '{filename}' in this directory")
+        print(f"3. Save it to a file named '{filename}' in the script's directory")
         return None
     except Exception as e:
         print(f"Error reading API key: {e}")
